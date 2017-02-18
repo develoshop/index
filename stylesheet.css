@@ -1,0 +1,134 @@
+body {
+    background-color: lightblue;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkgrey;
+    box-sizing: border-box;
+    padding: 2em 1em;
+}
+
+header h1 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.midden {
+    background-color: white;
+}
+
+nav {
+    background-color: black;
+    box-sizing: border-box;
+    font-size: .9em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border-top: 1px solid white;
+    padding: .5em;
+}
+
+nav li:hover {
+    background-color: navy;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+article p {
+}
+
+article ul, #hoofdvak ol {
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+article h1 {
+    color: maroon;
+}
+
+article h2 {
+    color: navy;
+}
+
+aside {
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    font-size: .9em;
+    padding: 2em;
+    text-align: center;
+}
+
+aside p {
+}
+
+footer {
+    background-color: Black;
+    box-sizing: border-box;
+    clear: both;
+    color: white;
+    font-size: .8em;
+    padding: 2em;
+    text-align: center;
+}
+
+.nadruk {
+    font-weight: bold;
+    color: maroon;
+}
+
+@media screen and (min-width: 600px) {
+    header h1 {
+        text-align: left;
+    }
+    .midden::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    nav {
+        font-size: 1em;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        border-top: none;
+        flex-grow: 1;
+    }
+    article {
+        float: left;
+        width: 80%;
+    }
+    aside {
+        border-top: none;
+        float: left;
+    }
+}
